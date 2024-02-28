@@ -1,7 +1,19 @@
+/*
+ * @Author: BGG
+ * @Date: 2024-02-28 16:22:33
+ * @LastEditors: BGG
+ * @LastEditTime: 2024-02-28 16:36:22
+ * @Description: 
+ */
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+import React from 'react'
+import Home from './pages/home'
+import Detail from './page/detail'
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
