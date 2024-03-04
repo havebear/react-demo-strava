@@ -40,10 +40,10 @@ export default {
   - 处理数据请求的库：SWR、axios。
   - 大而全：react-use
   - 组件库：antd（组件库抽象了一些常见的交互和样式模式，并提供了可重用的组件）
-- 尝试在本项目中使用原子化 css，比如 tailwindcss（特别适用于 C 端）
-- 拦截器
-- 和 Vue 的区别？为什么很多人选择了 React
-- TypeScript 的实践，为什么如此多的人选择 TypeScript
+- 尝试在本项目中使用原子化 css，比如 tailwindcss（适用于 C 端）
+- http 拦截器
+- 和 Vue 的区别？为什么很多人选择 React
+- TypeScript 的实践，为什么很多人选择 TypeScript
 - 原则
   - 不要过度封装
   - 不要过度设计
@@ -53,10 +53,10 @@ export default {
   - 分离关注点，降低心智负担
   - 持续降低复杂度
 - 全局状态管理，redux？
-- Hooks（应用状态管理容器） 是什么，为什么存在，怎么用
+- Hooks（应用状态管理容器） 是什么，解决什么需求，怎么用？
 - react 的上下文 context？
 - react 如何操作 dom（react-dom？）
-- 组件之间如何通信，父子组件通信？
+- 组件之间如何通信，父子组件通信？props？
 - 什么时候获取数据，什么时候渲染？
 - css 模块、css in js、styled-components、emotion（？）
 - 组件类型？暂定
