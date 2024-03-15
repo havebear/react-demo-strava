@@ -2,16 +2,16 @@
  * @Author: BGG
  * @Date: 2024-03-14 15:43:32
  * @LastEditors: BGG
- * @LastEditTime: 2024-03-14 15:43:32
+ * @LastEditTime: 2024-03-15 16:47:48
  * @Description: 导航栏
  */
 
-import React from 'react';
+import React from 'react'
 
 const NavBar: React.FC = () => {
   return (
     <div>NavBar</div>
   )
-};
+}
 
-export default NavBar;
+export default NavBar
