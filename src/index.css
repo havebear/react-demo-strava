@@ -1,10 +1,7 @@
-/*
- * @Author: BGG
- * @Date: 2024-02-28 16:03:22
- * @LastEditors: BGG
- * @LastEditTime: 2024-03-15 16:39:21
- * @Description: 
- */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 
 body {
   background-color: #F9F8F5;
