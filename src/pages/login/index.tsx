@@ -3,17 +3,16 @@
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
  * @LastEditTime: 2024-02-28 16:31:22
- * @Description: 详情
+ * @Description: 登录
  */
 
 import React from 'react'
-import Hello from '../../components/Hello'
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   return (
-    <div>Detail<Hello /></div>
+    <div>Login</div>
   )
 };
 
-export default Home
+export default Login
 

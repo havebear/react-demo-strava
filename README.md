@@ -1,3 +1,10 @@
+<!--
+ * @Author: BGG
+ * @Date: 2024-02-28 16:03:22
+ * @LastEditors: BGG
+ * @LastEditTime: 2024-03-15 15:34:37
+ * @Description: 
+-->
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -72,3 +79,23 @@ export default {
   > 当业务需求不复杂，页面较简单时，我们通常会用上面的方式来管理项目中的数据流。但如果需要实现跨组件通信、状态同步以及状态共享时，通过状态提升至最近的共同父组件来实现。
 - react-router 和 react-router-dom 有什么区别？
   > react-router专注于提供强大的路由功能和简单的API，适合需要高度定制化和复杂路由逻辑的场景。而react-router-dom则在react-router的基础上进一步扩展了浏览器环境的使用体验，使其更适合需要通过操作DOM来控制路由的场景11
+- React Fiber?
+
+
+## Records
+
+- 在架构项目目录时，有很多疑惑，参考了开源项目 Qwerty-Learner
+- 使用 React-Router-Dom 路由 很疑惑(ai 提示了 使用 react-router-config 配置路由，但是这个库是 4.x 的版本，而 react-router-dom 是 6.x 的版本)，幡然醒悟，还没看[官方文档](https://reactrouter.com/en/main/start/overview#client-side-routing)。
+  - 组件
+    - Routers（一级路由） 代替了 原有的 Switch
+    - Ruoter（基础路由）可以嵌套
+    - Link（导航组件），在页面中跳转使用
+    - Outlet（自适应渲染组件），根据实际路由 url 自动选择组件
+  - hooks
+    - useParams 返回当前参数
+    - useNavigate 返回当前路由
+    - useOutlet 返回根据路由生成的 element
+    - useLocation 返回当前的 location 对象
+    - useRoutes 同 Routers 组件一样，只不过是在 js 中使用
+    - useSearchParams 返回 url 中的参数
+
