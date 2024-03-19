@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from './css/RecommendFriend.module.css'
+import style from './css/RecommendFriend.module.less'
 
 const RecommendFriend: React.FC = () => {
   return (

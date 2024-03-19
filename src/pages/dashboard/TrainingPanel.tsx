@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from './css/TrainingPanel.module.css'
+import style from './css/TrainingPanel.module.less'
 
 const TrainingPanel: React.FC = () => {
   return (

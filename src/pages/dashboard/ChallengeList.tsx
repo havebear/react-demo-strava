@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from './css/ChallengeList.module.css'
+import style from './css/ChallengeList.module.less'
 
 const ChallengeList: React.FC = () => {
   return (

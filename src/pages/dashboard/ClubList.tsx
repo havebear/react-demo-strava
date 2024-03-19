@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from './css/ClubList.module.css'
+import style from './css/ClubList.module.less'
 
 const ClubList: React.FC = () => {
   return (
