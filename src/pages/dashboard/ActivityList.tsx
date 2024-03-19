@@ -7,11 +7,11 @@
  */
 
 import React from 'react'
-import './css/activity-list.css'
+import style from './css/ActivityList.module.css'
 
 const ActivityList: React.FC = () => {
   return (
-    <div className='activity-list'>
+    <div className={style.container}>
       活动列表
     </div>
   )

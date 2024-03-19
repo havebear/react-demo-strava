@@ -7,11 +7,11 @@
  */
 
 import React from 'react'
-import './css/about.css'
+import style from  './css/About.module.css'
 
 const About: React.FC = () => {
   return (
-    <div className='about'>
+    <div className={style.container}>
       关于
     </div>
   )

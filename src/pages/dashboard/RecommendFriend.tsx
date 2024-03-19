@@ -7,11 +7,11 @@
  */
 
 import React from 'react'
-import './css/recommend-friend.css'
+import style from './css/RecommendFriend.module.css'
 
 const RecommendFriend: React.FC = () => {
   return (
-    <div className='recommend-friend'>
+    <div className={style.container}>
       推荐好友
     </div>
   )

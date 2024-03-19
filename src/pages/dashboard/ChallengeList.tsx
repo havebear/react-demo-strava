@@ -7,11 +7,11 @@
  */
 
 import React from 'react'
-import './css/challenge-list.css'
+import style from './css/ChallengeList.module.css'
 
 const ChallengeList: React.FC = () => {
   return (
-    <div className='challenge-list'>
+    <div className={style.container}>
       挑战列表
     </div>
   )

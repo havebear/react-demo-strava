@@ -7,11 +7,11 @@
  */
 
 import React from 'react'
-import './css/club-list.css'
+import style from './css/ClubList.module.css'
 
 const ClubList: React.FC = () => {
   return (
-    <div className='club-list'>
+    <div className={style.container}>
       俱乐部列表
     </div>
   )

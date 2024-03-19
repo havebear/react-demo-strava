@@ -14,17 +14,17 @@ import ChallengeList from './ChallengeList'
 import ClubList from './ClubList'
 import RecommendFriend from './RecommendFriend'
 import About from './About'
-import './css/index.css'
+import style from  './css/index.module.css'
 
 const Dashboard: React.FC = () => {
   return (
-    <div className='dashboard-container'>
-      <div>
+    <div className={style.container}>
+      <div className={style.left}>
         <UserPanel />
         <TrainingPanel />
       </div>
       <ActivityList />
-      <div>
+      <div className={style.right}>
         <ChallengeList />
         <ClubList />
         <RecommendFriend />

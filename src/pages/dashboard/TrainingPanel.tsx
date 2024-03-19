@@ -7,11 +7,11 @@
  */
 
 import React from 'react'
-import './css/training-panel.css'
+import style from './css/TrainingPanel.module.css'
 
 const TrainingPanel: React.FC = () => {
   return (
-    <div className='training-panel'>
+    <div className={style.container}>
       训练面板
     </div>
   )
