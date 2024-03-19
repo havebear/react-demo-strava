@@ -7,14 +7,15 @@
  */
 
 import React from 'react'
+import Activity from './components/Activity'
 import style from './css/ActivityList.module.less'
 
 const ActivityList: React.FC = () => {
   return (
     <div className={style.container}>
-      活动列表
+      {[1, 2, 3].map(item => <Activity key={item} />)}
     </div>
   )
-};
+}
 
 export default ActivityList

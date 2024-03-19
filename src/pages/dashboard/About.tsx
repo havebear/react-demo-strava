@@ -15,6 +15,6 @@ const About: React.FC = () => {
       关于
     </div>
   )
-};
+}
 
 export default About
