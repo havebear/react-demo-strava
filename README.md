@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:03:22
  * @LastEditors: BGG
- * @LastEditTime: 2024-03-15 15:34:37
+ * @LastEditTime: 2024-03-19 15:49:28
  * @Description: 
 -->
 # React + TypeScript + Vite
@@ -98,4 +98,4 @@ export default {
     - useLocation 返回当前的 location 对象
     - useRoutes 同 Routers 组件一样，只不过是在 js 中使用
     - useSearchParams 返回 url 中的参数
-
+- 还是很难接受 tailwind.css
