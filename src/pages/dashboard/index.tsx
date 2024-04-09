@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-03-19 16:07:41
+ * @LastEditTime: 2024-04-09 14:01:42
  * @Description: 仪表盘
  */
 
@@ -32,7 +32,7 @@ const Dashboard: React.FC = () => {
       </div>
     </div>
   )
-};
+}
 
 export default Dashboard
 
