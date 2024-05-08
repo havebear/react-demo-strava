@@ -7,12 +7,13 @@
  */
 
 import React from 'react'
+import TitleBar from '../../components/title/TitleBar'
 import style from './css/ClubList.module.less'
 
 const ClubList: React.FC = () => {
   return (
     <div className={style.container}>
-      俱乐部列表
+      <TitleBar title="你的俱乐部" />
     </div>
   )
 };

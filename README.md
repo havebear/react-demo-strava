@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:03:22
  * @LastEditors: BGG
- * @LastEditTime: 2024-03-19 15:49:28
+ * @LastEditTime: 2024-05-08 15:03:31
  * @Description: 
 -->
 # React + TypeScript + Vite
@@ -101,7 +101,7 @@ export default {
 - 还是很难接受 tailwind.css
 
 2024.05.08
-- 自定义组件不能通过 className 传入类名
+- 自定义组件不能通过 className 传入类名（误）
 - 如何使用静态资源
 - 全局样式变量，考虑 css var
-- 传递组件参数
+- 通过属性传递参数
