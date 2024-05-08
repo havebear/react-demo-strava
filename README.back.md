@@ -1,0 +1,100 @@
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## 我的疑问、记录、想法
+
+- 如何更好的管理路由，react-router-dom
+- 怎么组织项目的结构（目录）
+- 一些库
+  - 处理时间的库：day.js。
+  - 处理数据的库：lodash。
+  - 处理表单的库：formik。
+  - 处理数据请求的库：SWR、axios。
+  - 大而全：react-use
+  - 组件库：antd（组件库抽象了一些常见的交互和样式模式，并提供了可重用的组件）
+- 尝试在本项目中使用原子化 css，比如 tailwindcss（适用于 C 端）
+- http 拦截器
+- 和 Vue 的区别？为什么很多人选择 React
+- TypeScript 的实践，为什么很多人选择 TypeScript
+- 原则
+  - 不要过度封装
+  - 不要过度设计
+  - 不要过度优化
+  - 不要过度抽象 （以上 4 点是ai生成的😄）
+  - 高内聚、低耦合、可扩展
+  - 分离关注点，降低心智负担
+  - 持续降低复杂度
+- 全局状态管理，redux？
+- Hooks（应用状态管理容器） 是什么，解决什么需求，怎么用？
+- react 的上下文 context？
+- react 如何操作 dom（react-dom？）
+- 组件之间如何通信，父子组件通信？props？
+- 什么时候获取数据，什么时候渲染？
+- css 模块、css in js、styled-components、emotion（？）
+- 组件类型？暂定
+  - 容器组件？
+  > 负责获取数据，处理业务逻辑，通常在 render() 函数内返回展示型组件
+  - 展示型组件?
+  > 负责渲染 UI，通常在 render() 函数内返回 React 元素
+  - 布局型组件？
+  > 负责 UI 布局，通常在 render() 函数内返回展示型组件
+- 数据流
+  > React是自上而下的单向组件数据流，容器组件&展示组件（也叫傻瓜组件&聪明组件）是最常用的React组件设计方案，容器组件负责处理复杂的业务逻辑以及数据，展示组件负责处理UI层，通常我们会将展示组件抽出来进行复用或者组件库的封装，容器组件自身通过state来管理状态，setState更新状态，从而更新UI，通过props将自身的state传递给展示组件实现通信。
+
+  > 当业务需求不复杂，页面较简单时，我们通常会用上面的方式来管理项目中的数据流。但如果需要实现跨组件通信、状态同步以及状态共享时，通过状态提升至最近的共同父组件来实现。
+- react-router 和 react-router-dom 有什么区别？
+  > react-router专注于提供强大的路由功能和简单的API，适合需要高度定制化和复杂路由逻辑的场景。而react-router-dom则在react-router的基础上进一步扩展了浏览器环境的使用体验，使其更适合需要通过操作DOM来控制路由的场景11
+- React Fiber?
+
+
+## Records
+
+- 在架构项目目录时，有很多疑惑，参考了开源项目 Qwerty-Learner
+- 使用 React-Router-Dom 路由 很疑惑(ai 提示了 使用 react-router-config 配置路由，但是这个库是 4.x 的版本，而 react-router-dom 是 6.x 的版本)，幡然醒悟，还没看[官方文档](https://reactrouter.com/en/main/start/overview#client-side-routing)。
+  - 组件
+    - Routers（一级路由） 代替了 原有的 Switch
+    - Ruoter（基础路由）可以嵌套
+    - Link（导航组件），在页面中跳转使用
+    - Outlet（自适应渲染组件），根据实际路由 url 自动选择组件
+  - hooks
+    - useParams 返回当前参数
+    - useNavigate 返回当前路由
+    - useOutlet 返回根据路由生成的 element
+    - useLocation 返回当前的 location 对象
+    - useRoutes 同 Routers 组件一样，只不过是在 js 中使用
+    - useSearchParams 返回 url 中的参数
+- 还是很难接受 tailwind.css
+
+2024.05.08
+- 自定义组件不能通过 className 传入类名（误）
+- 如何使用静态资源
+- 全局样式变量，考虑 css var
+- 通过属性传递参数
