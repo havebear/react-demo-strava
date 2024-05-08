@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:47
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-08 14:52:49
+ * @LastEditTime: 2024-05-08 17:27:17
  * @Description: 活动项
  */
 
@@ -10,7 +10,7 @@ import React from 'react'
 import ActivityReleaseInfo from './ActivityReleaseInfo'
 import ActivityType from './ActivityType'
 import ActivityData from './ActivityData'
-import ActivityPersonalRecords from './ActivityPersonalRecords'
+import ActivityPersonalRecordList from './ActivityPersonalRecordList'
 import ActivityChallenge from './ActivityChallenge'
 import ActivityImageList from './ActivityImageList'
 import ActivityInteraction from './ActivityInteraction'
@@ -35,7 +35,7 @@ const Activity: React.FC = () => {
         </div>
       </div>
       {/* 个人纪录 */}
-      <ActivityPersonalRecords />
+      <ActivityPersonalRecordList />
       {/* 挑战信息 */}
       <ActivityChallenge />
       {/* 活动图片 */}

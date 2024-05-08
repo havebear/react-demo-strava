@@ -9,7 +9,7 @@
 import React from 'react'
 import style from  './css/ActivityType.module.less'
 
-const ActivityPersonalRecords: React.FC = () => {
+const ActivityPersonalRecordList: React.FC = () => {
   return (
     <div className={style.container}>
        <div>Innsbruckring 个人纪录 (16:37)</div>
@@ -18,4 +18,4 @@ const ActivityPersonalRecords: React.FC = () => {
   )
 }
 
-export default ActivityPersonalRecords
+export default ActivityPersonalRecordList
