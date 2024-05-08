@@ -29,7 +29,7 @@ const HomeRoutes: React.FC = () => {
       <Route path="/" element={<Dashboard />} />
       <Route path="dashboard" element={<Dashboard />} />
       <Route path="activities/:id" element={<Activities />} />
-     </Routes>
+    </Routes>
   )
 }
 

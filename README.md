@@ -99,3 +99,9 @@ export default {
     - useRoutes 同 Routers 组件一样，只不过是在 js 中使用
     - useSearchParams 返回 url 中的参数
 - 还是很难接受 tailwind.css
+
+2024.05.08
+- 自定义组件不能通过 className 传入类名
+- 如何使用静态资源
+- 全局样式变量，考虑 css var
+- 传递组件参数
