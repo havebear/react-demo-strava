@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from  './css/ActivityType.module.less'
+import style from  './css/ActivityImageList.module.less'
 
 const ActivityImageList: React.FC = () => {
   return (

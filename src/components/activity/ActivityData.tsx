@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from  './css/ActivityType.module.less'
+import style from  './css/ActivityData.module.less'
 
 const ActivityData: React.FC = () => {
   return (
