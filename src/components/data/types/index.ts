@@ -7,5 +7,6 @@ export interface ICommonProps {
 export interface IColumn {
   title: string // 标题
   dataIndex: string // 数据索引
-  unit?: string // 单位
+  unit?: string, // 单位
+  span?: number // 占比
 }

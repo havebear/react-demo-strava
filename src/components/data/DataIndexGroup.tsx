@@ -13,12 +13,20 @@ import { IColumn, ICommonProps } from './types'
 
 interface DataIndexGroupProps extends ICommonProps {
   data: { [key: string]: number | string }
-  columns: IColumn[]
+  columns: IColumn[],
+  flex?: boolean
 }
 
-const DataIndexGroup: React.FC<DataIndexGroupProps> = ({ columns = [], data = {}, reversal = false, align = 'left', border }) => {
+const DataIndexGroup: React.FC<DataIndexGroupProps> = ({
+  columns = [],
+  data = {},
+  reversal = false,
+  align = 'left',
+  border = false,
+  flex = false
+}) => {
   return (
-    <div className={style.container}>
+    <div className={`${style.container} ${flex ? style.flex : null}`}>
       {columns.map((item, index) => <DataIndex
         key={item.dataIndex}
         title={item.title}
@@ -26,6 +34,7 @@ const DataIndexGroup: React.FC<DataIndexGroupProps> = ({ columns = [], data = {}
         unit={item.unit}
         reversal={reversal}
         align={align}
+        span={item.span || 1}
         border={border && index !== columns.length - 1} />)}
     </div>
   )

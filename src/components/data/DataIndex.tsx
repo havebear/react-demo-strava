@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-05-08 14:19:22
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-16 16:49:54
+ * @LastEditTime: 2024-05-16 17:44:44
  * @Description: 数据指标
  */
 
@@ -15,11 +15,21 @@ export interface DataIndexProps extends ICommonProps {
   value?: number | string
   unit?: string,
   valueContent?: React.ReactNode
+  span?: number // 占比
 }
 
-const DataIndex: React.FC<DataIndexProps> = ({ align, title, value, unit, border, reversal, valueContent }) => {
+const DataIndex: React.FC<DataIndexProps> = ({
+  align = 'left',
+  title,
+  value,
+  unit,
+  border = false,
+  reversal = false,
+  valueContent,
+  span = 1
+}) => {
   const rValue = valueContent || <div>{value}{unit || ''}</div>
-  const wrapStyle = { textAlign: align }
+  const wrapStyle = { textAlign: align, flex: span }
 
   return (
     <div className={`${style.container} ${border ? style.border : ''}`} style={wrapStyle}>
