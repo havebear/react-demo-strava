@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from  './css/ActivityPersonalRecordList.module.less'
+import style from './css/ActivityPersonalRecordList.module.less'
 
 const ActivityPersonalRecordList: React.FC = () => {
   return (

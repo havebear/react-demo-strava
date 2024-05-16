@@ -8,7 +8,7 @@
 
 import React from 'react'
 import Avatar from '../avatar/Avatar'
-import style from  './css/ActivityReleaseInfo.module.less'
+import style from './css/ActivityReleaseInfo.module.less'
 
 const ActivityReleaseInfo: React.FC = () => {
   return (

@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from  './css/Avatar.module.less'
+import style from './css/Avatar.module.less'
 
 const Avatar: React.FC = () => {
   return (

@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from  './css/About.module.less'
+import style from './css/About.module.less'
 
 const About: React.FC = () => {
   return (

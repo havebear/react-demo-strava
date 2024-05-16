@@ -7,7 +7,7 @@
  */
 
 import React from 'react'
-import style from  './css/ActivityChallenge.module.less'
+import style from './css/ActivityChallenge.module.less'
 
 const ActivityChallenge: React.FC = () => {
   return (

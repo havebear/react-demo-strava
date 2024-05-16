@@ -14,7 +14,7 @@ import ChallengeList from './ChallengeList'
 import ClubList from './ClubList'
 import RecommendFriend from './RecommendFriend'
 import About from './About'
-import style from  './css/index.module.less'
+import style from './css/index.module.less'
 
 const Dashboard: React.FC = () => {
   return (

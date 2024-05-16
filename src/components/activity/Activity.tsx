@@ -14,7 +14,7 @@ import ActivityPersonalRecordList from './ActivityPersonalRecordList'
 import ActivityChallenge from './ActivityChallenge'
 import ActivityImageList from './ActivityImageList'
 import ActivityInteraction from './ActivityInteraction'
-import style from  './css/Activity.module.less'
+import style from './css/Activity.module.less'
 
 const Activity: React.FC = () => {
   return (
