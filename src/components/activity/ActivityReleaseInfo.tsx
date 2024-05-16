@@ -16,7 +16,7 @@ const ActivityReleaseInfo: React.FC = () => {
       <div className={style.avatar}>
         <Avatar />
       </div>
-      <div>
+      <div className={style.main}>
         <div className={style.user}>AcFun优质用户</div>
         <div className={style.time}>今天于 上午9:28 · Shiyang, 四川省</div>
       </div>

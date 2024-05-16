@@ -2,11 +2,12 @@
  * @Author: BGG
  * @Date: 2024-05-08 14:39:40
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-16 16:32:35
+ * @LastEditTime: 2024-05-16 16:54:55
  * @Description: 活动数据，需要根据活动类型展示不同的数据
  */
 
 import React from 'react'
+import DataIndex from '../data/DataIndex'
 import DataIndexGroup from '../data/DataIndexGroup'
 import style from './css/ActivityData.module.less'
 import { IColumn } from '../data/types'
@@ -25,10 +26,11 @@ const columns: IColumn[] = [
 ]
 
 const ActivityData: React.FC = () => {
+  const Achievement = <span>TEST</span>
   return (
     <div className={style.container}>
       <DataIndexGroup columns={columns} data={data} border />
-      <div>RIGHT</div>
+      <DataIndex title="成就" valueContent={Achievement} />
     </div>
   )
 }

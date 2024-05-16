@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-05-08 14:15:15
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-15 15:25:47
+ * @LastEditTime: 2024-05-16 17:26:42
  * @Description: 活动类型
  */
 
@@ -11,7 +11,7 @@ import style from './css/ActivityType.module.less'
 
 const ActivityType: React.FC = () => {
   return (
-    <div className={style.container}>Bicycle</div>
+    <img className={style.icon} src="/images/bike.png" />
   )
 }
 
