@@ -28,12 +28,14 @@ const columns: IColumn[] = [
 const UserPanel: React.FC = () => {
   return (
     <div className={style.container}>
-      <div className={style.avatar}>
-        <Avatar />
-        <span>AcFun优质用户</span>
+      <div className={style.user}>
+        <div className={style.avatar}>
+          <Avatar />
+          <span>AcFun优质用户</span>
+        </div>
+        {/* 用户统计信息 */}
+        <DataIndexGroup columns={columns} data={data} flex align="center" border />
       </div>
-      {/* 用户统计信息 */}
-      <DataIndexGroup columns={columns} data={data} flex align="center" border />
       {/* 最近一次活动 */}
       <div>最近一次活动</div>
       {/* 训练日志入口 */}
