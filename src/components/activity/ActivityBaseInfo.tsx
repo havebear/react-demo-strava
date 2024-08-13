@@ -19,9 +19,9 @@ const ActivityBaseInfo: React.FC = () => {
       <div className={style.type}><ActivityType /></div>
       <div className={style.main}>
         {/* 活动标题 */}
-        <div>Zwift - Foundation in Innsbruck</div>
+        <div className={style.title}>Zwift - Foundation in Innsbruck</div>
         {/* 活动描述 */}
-        <div>FTP237了 对上个月训练还是满意</div>
+        <div className={style.content}>FTP237了 对上个月训练还是满意</div>
         {/* 活动数据 */}
         <ActivityData />
         {/* 个人纪录 */}

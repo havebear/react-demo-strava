@@ -28,13 +28,13 @@ const DataIndex: React.FC<DataIndexProps> = ({
   valueContent,
   span = 1
 }) => {
-  const rValue = valueContent || <div>{value}{unit || ''}</div>
+  const rValue = valueContent || <div className={style.value}>{value}{unit || ''}</div>
   const wrapStyle = { textAlign: align, flex: span }
 
   return (
     <div className={`${style.container} ${border ? style.border : ''}`} style={wrapStyle}>
       {reversal ? (rValue) : null}
-      <div>{title}</div>
+      <div className={style.title}>{title}</div>
       {!reversal ? rValue : null}
     </div>
   )
