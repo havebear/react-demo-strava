@@ -2,9 +2,12 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-
 body {
   background-color: #F9F8F5;
+}
+
+:root {
+  --bs-color-main: #FC5200;
 }
 
 /* :root {
