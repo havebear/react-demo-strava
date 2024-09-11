@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-09-11 14:30:43
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-11 15:54:33
+ * @LastEditTime: 2024-09-11 17:05:03
  * @Description: 用户导航
  */
 
@@ -17,6 +17,7 @@ const UserNav: React.FC = () => {
     {
       title: '控制面板',
       path: '/dashboard',
+      dropAlign: 'right',
       children: [
         { title: '活动状态栏', path: '/dashboard' },
         { title: '俱乐部', path: '/clubs/search' },
@@ -28,6 +29,7 @@ const UserNav: React.FC = () => {
     {
       title: '训练',
       path: '/user',
+      dropAlign: 'right',
       children: [
         { title: '训练日志', path: '/athlete/calendar' },
         { title: '我的活动', path: '/athlete/training' },
