@@ -7,10 +7,14 @@
  */
 
 import React from 'react'
+import style from '../css/Nav.module.less'
 
 const Logo: React.FC = () => {
   return (
-    <img src="/images/logo.png" style={{height: '20px'}} title="返回至 strava 首页" />
+    <img
+      className={style.logo}
+      src="/images/logo.png"
+      title="返回至 strava 首页" />
   )
 }
 
