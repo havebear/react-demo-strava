@@ -23,7 +23,6 @@ const DropdownItem: React.FC<DropdownItemProps> = ({ title }) => {
   )
 }
 
-
 const NavItem: React.FC<NavItemProps> = ({ title, children, path, dropAlign = 'left' }) => {
 
   const menus = children?.map(item => <DropdownItem title={item.title} />)
