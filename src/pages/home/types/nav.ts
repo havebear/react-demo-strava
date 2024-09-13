@@ -1,4 +1,4 @@
-export interface NavItemProps {
+export interface INavItemProps {
   title: string, // 标题
   path?: string, // 路径
   dropAlign?: 'left' | 'right', // 对齐方式

@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-05-08 14:19:22
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-16 17:44:44
+ * @LastEditTime: 2024-09-13 17:45:11
  * @Description: 数据指标
  */
 
@@ -10,7 +10,7 @@ import React from 'react'
 import style from './css/DataIndex.module.less'
 import { ICommonProps } from './types'
 
-export interface DataIndexProps extends ICommonProps {
+export interface IDataIndexProps extends ICommonProps {
   title?: string
   value?: number | string
   unit?: string,
@@ -18,7 +18,7 @@ export interface DataIndexProps extends ICommonProps {
   span?: number // 占比
 }
 
-const DataIndex: React.FC<DataIndexProps> = ({
+const DataIndex: React.FC<IDataIndexProps> = ({
   align = 'left',
   title,
   value,

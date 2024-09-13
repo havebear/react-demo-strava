@@ -8,12 +8,12 @@
 
 import React from 'react'
 import NavGroup from './NavGroup'
-import { NavItemProps } from '../types/nav'
+import { INavItemProps } from '../types/nav'
 
 
 const UserNav: React.FC = () => {
 
-  const menus:Array<NavItemProps> = [
+  const menus:Array<INavItemProps> = [
     {
       title: '我的',
       path: '/athlete',

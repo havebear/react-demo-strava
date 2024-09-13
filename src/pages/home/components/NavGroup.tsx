@@ -9,13 +9,13 @@
 import React from 'react'
 import NavItem from './NavItem'
 import style from '../css/Nav.module.less'
-import { NavItemProps } from '../types/nav'
+import { INavItemProps } from '../types/nav'
 
-interface NavGroupProps {
-  data: NavItemProps[]
+interface INavGroupProps {
+  data: INavItemProps[]
 }
 
-const NavGroup: React.FC<NavGroupProps> = ({ data = [] }) => {
+const NavGroup: React.FC<INavGroupProps> = ({ data = [] }) => {
 
   const navGroup = data.map(item => <NavItem title={item.title} path={item.path} children={item.children} dropAlign={item.dropAlign} />)
 

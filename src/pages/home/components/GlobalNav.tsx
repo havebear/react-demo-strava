@@ -8,11 +8,11 @@
 
 import React from 'react'
 import NavGroup from './NavGroup'
-import { NavItemProps } from '../types/nav'
+import { INavItemProps } from '../types/nav'
 
 const GlobalNav: React.FC = () => {
 
-  const menus:Array<NavItemProps> = [
+  const menus:Array<INavItemProps> = [
     {
       title: '控制面板',
       path: '/dashboard',

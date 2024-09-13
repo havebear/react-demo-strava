@@ -8,14 +8,14 @@
 
 import React from 'react'
 import style from '../css/Nav.module.less'
-import { NavItemProps } from '../types/nav'
+import { INavItemProps } from '../types/nav'
 
-interface DropdownItemProps {
+interface IDropdownItemProps {
   title: string
 }
 
 /** 下拉菜单项 */
-const DropdownItem: React.FC<DropdownItemProps> = ({ title }) => {
+const DropdownItem: React.FC<IDropdownItemProps> = ({ title }) => {
   return (
     <div className={style.dropdown_item}>
       <span className={style.dropdown_item_title}>{title}</span>
@@ -23,7 +23,7 @@ const DropdownItem: React.FC<DropdownItemProps> = ({ title }) => {
   )
 }
 
-const NavItem: React.FC<NavItemProps> = ({ title, children, path, dropAlign = 'left' }) => {
+const NavItem: React.FC<INavItemProps> = ({ title, children, path, dropAlign = 'left' }) => {
 
   const menus = children?.map(item => <DropdownItem title={item.title} />)
 

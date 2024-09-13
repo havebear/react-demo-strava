@@ -11,13 +11,13 @@ import DataIndex from './DataIndex'
 import style from './css/DataIndexGroup.module.less'
 import { IColumn, ICommonProps } from './types'
 
-interface DataIndexGroupProps extends ICommonProps {
+interface IDataIndexGroupProps extends ICommonProps {
   data: { [key: string]: number | string }
   columns: IColumn[],
   flex?: boolean
 }
 
-const DataIndexGroup: React.FC<DataIndexGroupProps> = ({
+const DataIndexGroup: React.FC<IDataIndexGroupProps> = ({
   columns = [],
   data = {},
   reversal = false,

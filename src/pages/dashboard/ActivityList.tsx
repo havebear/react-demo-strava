@@ -13,7 +13,13 @@ import style from './css/ActivityList.module.less'
 const ActivityList: React.FC = () => {
   return (
     <div className={style.container}>
-      {[1, 2, 3].map(item => <Activity key={item} />)}
+      <div className={style.action}>
+        <span>Type</span>
+        <span>Like</span>
+      </div>
+      <div>
+        {[1, 2, 3].map(item => <Activity key={item} />)}
+      </div>
     </div>
   )
 }

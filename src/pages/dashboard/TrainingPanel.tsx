@@ -2,12 +2,13 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:12
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-08 15:44:48
+ * @LastEditTime: 2024-09-13 17:51:35
  * @Description: 训练面板
  */
 
 import React from 'react'
 import TrainingStatistics from './components/TrainingStatistics'
+import LinkCard from '../../components/card/LinkCard'
 import style from './css/TrainingPanel.module.less'
 
 const TrainingPanel: React.FC = () => {
@@ -15,7 +16,7 @@ const TrainingPanel: React.FC = () => {
     <div className={style.container}>
       <div>Tab</div>
       <TrainingStatistics />
-      <div>管理你的目标</div>
+      <LinkCard title="管理你的目标" />
     </div>
   )
 };
