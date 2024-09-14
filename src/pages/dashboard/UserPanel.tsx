@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:12
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-13 17:49:58
+ * @LastEditTime: 2024-09-14 11:19:17
  * @Description: 用户面板
  */
 
@@ -39,9 +39,13 @@ const UserPanel: React.FC = () => {
       <div className={style.user_total}>
         <DataIndexGroup columns={columns} data={data} flex align="center" border />
       </div>
-      <div className={style.link_wrap}>
+      <div className={style.user_active}>
         {/* 最近一次活动 */}
-        <div>最近一次活动</div>
+        <div className={style.last_active}>
+          <div>最近一次活动</div>
+          <div>Zwift - Big Flat 8 in Watopia</div>
+          <div>2024年9月12日</div>
+        </div>
         {/* 训练日志入口 */}
         <LinkCard title="你的训练日志" />
       </div>

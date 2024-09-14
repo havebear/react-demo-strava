@@ -19,6 +19,6 @@ const TrainingPanel: React.FC = () => {
       <LinkCard title="管理你的目标" />
     </div>
   )
-};
+}
 
 export default TrainingPanel

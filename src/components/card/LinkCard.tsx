@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-05-08 11:15:01
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-13 17:48:36
+ * @LastEditTime: 2024-09-14 11:17:39
  * @Description: 链接卡片
  */
 
@@ -18,7 +18,7 @@ const LinkCard: React.FC<ILinkCardProps> = ({ title }) => {
   return (
     <div className={style.link_card}>
       <span className={style.link_card_title}>{title}</span>
-      <img className={style.link_card_arrow} src="/images/icon_close.png" />
+      <img className={style.link_card_arrow} src="/images/icon_arrow_right.png" />
     </div>
   )
 }
