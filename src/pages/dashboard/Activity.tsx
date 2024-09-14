@@ -8,9 +8,9 @@
 
 import React from 'react'
 import Activity from '../../components/activity/Activity'
-import style from './css/ActivityList.module.less'
+import style from './css/Activity.module.less'
 
-const ActivityList: React.FC = () => {
+const Activity: React.FC = () => {
   return (
     <div className={style.container}>
       <div className={style.action}>
@@ -24,4 +24,4 @@ const ActivityList: React.FC = () => {
   )
 }
 
-export default ActivityList
+export default Activity
