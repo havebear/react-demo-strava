@@ -2,11 +2,12 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:12
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-14 11:19:17
+ * @LastEditTime: 2024-09-14 14:08:36
  * @Description: 用户面板
  */
 
 import React from 'react'
+import Card from '../../components/card/Card'
 import Avatar from '../../components/avatar/Avatar'
 import DataIndexGroup from '../../components/data/DataIndexGroup'
 import style from './css/UserPanel.module.less'
@@ -28,7 +29,7 @@ const columns: IColumn[] = [
 
 const UserPanel: React.FC = () => {
   return (
-    <div className={style.container}>
+    <Card bottomMargin>
       <div className={style.user}>
         <span className={style.user_avatar}>
           <Avatar />
@@ -42,14 +43,16 @@ const UserPanel: React.FC = () => {
       <div className={style.user_active}>
         {/* 最近一次活动 */}
         <div className={style.last_active}>
-          <div>最近一次活动</div>
-          <div>Zwift - Big Flat 8 in Watopia</div>
-          <div>2024年9月12日</div>
+          <div className={style.last_active_header}>最近一次活动</div>
+          <div className={style.last_active_main}>
+            <div className={style.last_active_title}>Zwift - Big Flat 8 in Watopia</div>
+            <div className={style.last_active_time}>2024年9月12日</div>
+          </div>
         </div>
         {/* 训练日志入口 */}
         <LinkCard title="你的训练日志" />
       </div>
-    </div>
+    </Card>
   )
 }
 

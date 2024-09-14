@@ -1,6 +1,7 @@
 .container {
   margin-bottom: 10px;
   background-color: #FFF;
+  box-shadow: 0 8px 24px rgba(13, 13, 18, .04);
 }
 .user {
   padding-bottom: 20px;
@@ -30,4 +31,21 @@
 .last_active {
   padding-bottom: 15px;
   border-bottom: 1px solid #f0f0f5;
+  color: #000;
+  &_header {
+    font-size: 12px;
+  }
+  &_main {
+    cursor: pointer;
+    &:hover {
+      color: var(--bs-color-main);
+    }
+  }
+  &_title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &_time {
+    font-size: 14px;
+  }
 }

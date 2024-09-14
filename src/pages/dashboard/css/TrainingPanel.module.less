@@ -1,3 +1,30 @@
 .container {
   background-color: #FFF;
 }
+
+.tab {
+  &_header {
+    display: flex;
+    background-color: #F8F7F4;
+  }
+  &_item {
+    min-width: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    cursor: pointer;
+    &_active {
+      background-color: #FFF;
+    }
+  }
+  &_main {
+    padding: 15px;
+    border-bottom: 1px solid #f0f0f5;
+  }
+}
+
+.target_link {
+  padding: 0 15px 15px 15px;
+}
