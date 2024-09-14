@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:47
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-14 14:14:36
+ * @LastEditTime: 2024-09-14 15:49:39
  * @Description: 活动项
  */
 
@@ -16,7 +16,7 @@ import ActivityInteraction from './ActivityInteraction'
 
 const Activity: React.FC = () => {
   return (
-    <Card bottomMargin paddingM>
+    <Card bottomMargin padding="l">
       {/* 发布信息 */}
       <ActivityReleaseInfo />
       {/* 基本信息 */}

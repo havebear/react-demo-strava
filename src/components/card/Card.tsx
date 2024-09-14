@@ -12,20 +12,16 @@ import style from './css/Card.module.less'
 interface ICard {
   children?: React.ReactNode;
   bottomMargin?: boolean;
-  paddingS?: boolean;
-  paddingM?: boolean;
-  paddingL?: boolean;
+  padding?: null | 's' |'m' | 'l'
 
 }
 
-const Card: React.FC<ICard> = ({ children, bottomMargin, paddingS, paddingM, paddingL }) => {
+const Card: React.FC<ICard> = ({ children, bottomMargin, padding }) => {
+
+  const cardClass = `${bottomMargin? style.card_bottom_margin : ''} ${padding? style[`card_padding_${padding}`] : ''}`
+
   return (
-    <div className={`
-      ${style.card}
-      ${bottomMargin ? style.card_bottom_margin : ''}
-      ${paddingS ? style.card_padding_s : ''}
-      ${paddingM ? style.card_padding_m : ''}
-      ${paddingL ? style.card_padding_l : ''}`}>
+    <div className={`${style.card} ${cardClass}`}>
       {children}
     </div>
   )
