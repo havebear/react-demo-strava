@@ -2,16 +2,16 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-07-11 14:52:19
+ * @LastEditTime: 2024-09-14 16:01:46
  * @Description: 仪表盘
  */
 
 import React from 'react'
 import UserPanel from './UserPanel'
 import TrainingPanel from './TrainingPanel'
-import ActivityList from './ActivityList'
-import ChallengeList from './ChallengeList'
-import ClubList from './ClubList'
+import Activity from './Activity'
+import Challenge from './Challenge'
+import Club from './Club'
 import RecommendFriend from './RecommendFriend'
 import About from './About'
 import style from './css/index.module.less'
@@ -23,10 +23,10 @@ const Dashboard: React.FC = () => {
         <UserPanel />
         <TrainingPanel />
       </div>
-      <ActivityList />
+      <Activity />
       <div className={style.right}>
-        <ChallengeList />
-        <ClubList />
+        <Challenge />
+        <Club />
         <RecommendFriend />
         <About />
       </div>

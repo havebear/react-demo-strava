@@ -2,18 +2,23 @@
  * @Author: BGG
  * @Date: 2024-03-19 16:01:28
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-08 15:09:11
+ * @LastEditTime: 2024-09-14 16:05:46
  * @Description: 推荐好友
  */
 
 import React from 'react'
 import TitleBar from '../../components/title/TitleBar'
+import RecommendFriendItem from './components/RecommendFriendItem'
 import style from './css/RecommendFriend.module.less'
 
 const RecommendFriend: React.FC = () => {
+
+  const el = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(item => <RecommendFriendItem key={item} />)
+
   return (
     <div className={style.container}>
       <TitleBar title="推荐好友" />
+      {el}
     </div>
   )
 };
