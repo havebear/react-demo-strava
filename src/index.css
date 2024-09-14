@@ -8,6 +8,8 @@ body {
 
 :root {
   --bs-color-main: #FC5200;
+  --bs-color-hover: #1274BC;
+
 }
 
 /* :root {

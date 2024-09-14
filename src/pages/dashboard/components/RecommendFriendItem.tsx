@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-09-14 15:50:58
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-14 16:13:37
+ * @LastEditTime: 2024-09-14 16:38:28
  * @Description: 推荐好友项
  */
 
@@ -16,8 +16,11 @@ const RecommendFriend: React.FC = () => {
       <Avatar />
       <div className={style.rf_item_main}>
         <span className={style.rf_item_title}>张三</span>
-        <div className={style.rf_item_content}>You have mutual friends on Strava</div>
+        <div className={style.rf_item_remark}>You have mutual friends on Strava</div>
       </div>
+      <span className={style.rf_item_close}>
+        <img src="/images/icon_close.png" />
+      </span>
     </div>
   )
 }

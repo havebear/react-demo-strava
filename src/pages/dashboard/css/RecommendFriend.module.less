@@ -6,9 +6,48 @@
   &_item {
     display: flex;
     align-items: center;
+    padding: 10px 0;
+    &:hover {
+      .rf_item_close {
+        opacity: 0.8;
+      }
+    }
     &_main {
       min-width: 0;
       flex: 1;
+      padding-left: 10px;
+      font-weight: 400;
+    }
+    &_title {
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      &:hover {
+        color: var(--bs-color-hover);
+      }
+    }
+    &_remark {
+      font-size: 12px;
+      font-weight: 400;
+    }
+    &_close {
+      opacity: 0;
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      &:hover {
+        border-color: #DDD;
+        opacity: 1;
+      }
+      & > img {
+        width: 24px;
+      }
     }
   }
 }

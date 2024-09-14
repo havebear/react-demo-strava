@@ -9,9 +9,20 @@
 import React from 'react'
 import style from './css/Avatar.module.less'
 
-const Avatar: React.FC = () => {
+interface IAvatarProps {
+  size?: number
+}
+
+
+const Avatar: React.FC<IAvatarProps> = ({ size = 40 }) => {
+
+  const styleObj = {
+    width: size + 'px',
+    height: size + 'px'
+  }
+
   return (
-    <div className={style.avatar}>
+    <div className={style.avatar} style={styleObj}>
       <img src="/images/avatar.jpg" />
     </div>
   )

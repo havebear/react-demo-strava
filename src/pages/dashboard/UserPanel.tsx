@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:12
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-14 14:08:36
+ * @LastEditTime: 2024-09-14 16:29:05
  * @Description: 用户面板
  */
 
@@ -32,7 +32,7 @@ const UserPanel: React.FC = () => {
     <Card bottomMargin>
       <div className={style.user}>
         <span className={style.user_avatar}>
-          <Avatar />
+          <Avatar size={60} />
         </span>
         <span className={style.user_name}>AcFun优质用户</span>
       </div>
