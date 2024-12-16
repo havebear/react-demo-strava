@@ -38,7 +38,8 @@ const GlobalNav: React.FC = () => {
       ]
     },
     { title: '地图', path: '/map' },
-    { title: '挑战', path: '/challenge' }
+    { title: '挑战', path: '/challenge' },
+    { title: 'intervals', path: '/intervals' }
   ]
   
   return (
