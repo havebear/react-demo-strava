@@ -19,9 +19,8 @@ body {
   --radius-s: 3px;
   --font-color-content: #222222;
   --font-color-info: #525252;
+  --font-color-hover: #FC5200;
   --bg-color-main: #FFF;
-  --bs-color-main: #2B2B2B;
-  --bs-color-hover: #1274BC;
 }
 
 /* :root {

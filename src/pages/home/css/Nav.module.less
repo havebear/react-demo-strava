@@ -12,7 +12,7 @@
     cursor: pointer;
     font-size: 14px;
     font-weight: 400;
-    color: #494950;
+    color: var(--font-color-info);
     &:hover {
       &::after {
         content: '';
@@ -28,7 +28,7 @@
         display: block;
       }
       .nav_item_title {
-        color: var(--bs-color-main);
+        color: var(--font-color-hover);
       }
     }
     &_border {
@@ -62,6 +62,7 @@
     cursor: pointer;
     &:hover {
       background-color: #F6F6F9;
+      color: var(--font-color-hover);
     }
     &_icon {
       width: 20px;

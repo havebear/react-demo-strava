@@ -12,7 +12,7 @@ const Intervals: React.FC = () => {
   return (
     <div>Intervals</div>
   )
-};
+}
 
 export default Intervals
 
