@@ -8,3 +8,4 @@
 
 export const METER = 'm'
 export const KILOMETRE = 'km'
+export const INDIVIDUAL = '个'
