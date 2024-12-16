@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:12
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-14 16:29:05
+ * @LastEditTime: 2024-12-16 16:25:04
  * @Description: 用户面板
  */
 
@@ -13,7 +13,6 @@ import DataIndexGroup from '../../components/data/DataIndexGroup'
 import style from './css/UserPanel.module.less'
 import LinkCard from '../../components/card/LinkCard'
 import { IColumn } from '../../components/data/types'
-import { KILOMETRE, METER } from '../../config/base.config'
 
 const data = {
   a: 26,
@@ -22,8 +21,8 @@ const data = {
 }
 
 const columns: IColumn[] = [
-  { title: '正在关注', dataIndex: 'a', unit: KILOMETRE },
-  { title: '关注者', dataIndex: 'b', unit: METER },
+  { title: '正在关注', dataIndex: 'a' },
+  { title: '关注者', dataIndex: 'b' },
   { title: '活动', dataIndex: 'c' }
 ]
 
