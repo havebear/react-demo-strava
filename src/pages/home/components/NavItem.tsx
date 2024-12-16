@@ -40,7 +40,7 @@ const NavItem: React.FC<INavItemProps> = ({ title, children, path, dropAlign = '
 
   // 没有子节点的菜单
   const notChildEl = (
-    <Link to={path} className={style.nav_item}>
+    <Link className={style.nav_item} to={path}>
       <span className={style.nav_item_title}>{title}</span>
     </Link>
   )

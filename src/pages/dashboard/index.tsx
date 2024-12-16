@@ -2,11 +2,12 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-14 16:01:46
+ * @LastEditTime: 2024-12-16 16:16:18
  * @Description: 仪表盘
  */
 
 import React from 'react'
+import PageContainer from '../../components/wrap/PageContainer'
 import UserPanel from './UserPanel'
 import TrainingPanel from './TrainingPanel'
 import Activity from './Activity'
@@ -18,7 +19,7 @@ import style from './css/index.module.less'
 
 const Dashboard: React.FC = () => {
   return (
-    <div className={style.container}>
+    <PageContainer>
       <div className={style.left}>
         <UserPanel />
         <TrainingPanel />
@@ -30,7 +31,7 @@ const Dashboard: React.FC = () => {
         <RecommendFriend />
         <About />
       </div>
-    </div>
+    </PageContainer>
   )
 }
 

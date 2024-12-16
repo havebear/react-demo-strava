@@ -1,10 +1,3 @@
-<!--
- * @Author: BGG
- * @Date: 2024-02-28 16:03:22
- * @LastEditors: BGG
- * @LastEditTime: 2024-05-17 10:35:33
- * @Description: 
--->
 ## 技术栈
 - React
 - TypeScript
@@ -29,8 +22,14 @@
 - interface 合并
   - interface A extends B, C {}
 - className 绑定多个 module 提供的值
+- 默认插槽，使用 {children} 接收
 - 自定义插槽（在 react 中是通过 props 传递组件），默认和具名
 
 2024.05.17
 - 组件的渲染时机？以及带来的相关问题
+
+2024.12.16
+- 如何跳转路由
+  - <Link to={path}>
+  - useNavigate
   
