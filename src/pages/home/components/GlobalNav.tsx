@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-09-11 14:44:33
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-11 15:53:29
+ * @LastEditTime: 2024-12-17 17:04:55
  * @Description: 全局导航
  */
 
@@ -16,7 +16,7 @@ const MENUS:Array<INavItemProps> = [
     path: '/dashboard',
     children: [
       { title: '活动状态栏', path: '/dashboard' },
-      { title: '俱乐部', path: '/clubs/search' },
+      { title: '俱乐部', path: '/club/search' },
       { title: '我的路段', path: '/athlete/segments/starred' },
       { title: '我的路线', path: '/athlete/routes' },
       { title: '我的目标', path: '/athlete/goals' }
@@ -24,7 +24,7 @@ const MENUS:Array<INavItemProps> = [
   },
   {
     title: '训练',
-    path: '/user',
+    path: '/training',
     children: [
       { title: '训练日志', path: '/athlete/calendar' },
       { title: '我的活动', path: '/athlete/training' },

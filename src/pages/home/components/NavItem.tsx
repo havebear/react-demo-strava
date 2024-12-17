@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-09-11 14:34:24
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-16 15:58:52
+ * @LastEditTime: 2024-12-17 16:42:43
  * @Description: 菜单项
  */
 
@@ -48,7 +48,7 @@ const NavItem: React.FC<INavItemProps> = ({ title, children, path, dropAlign = '
   // 有子节点的菜单
   const hasChildEl = (
     <div className={`${style.nav_item} ${style.nav_item_border}`}>
-      <span className={style.nav_item_title}>{title}</span>
+      <Link className={style.nav_item_title} to={path}>{title}</Link>
       { navDropdown }
     </div>
   )

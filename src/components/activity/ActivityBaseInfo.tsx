@@ -20,7 +20,7 @@ const ActivityBaseInfo: React.FC = () => {
       <div className={style.type}><ActivityType /></div>
       <div className={style.main}>
         {/* 活动标题 */}
-        <Link className={style.title} to={'/activities/1'}>Zwift - Foundation in Innsbruck</Link>
+        <Link className={style.title} to={'/activitie/1'}>Zwift - Foundation in Innsbruck</Link>
         {/* 活动描述 */}
         <div className={style.content}>FTP237了 对上个月训练还是满意</div>
         {/* 活动数据 */}

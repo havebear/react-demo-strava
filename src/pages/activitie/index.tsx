@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-16 17:22:43
+ * @LastEditTime: 2024-12-17 17:06:20
  * @Description: 活动
  */
 
@@ -21,13 +21,13 @@ interface IMenu {
 }
 
 const MENUS:Array<IMenu> = [
-  { title: '概览', path: '/activities/1/overview' },
+  { title: '概览', path: '/activitie/1/overview' },
   // { title: '分析', path: '/analysis' },
-  { title: '圈', path: '/activities/1/laps' },
-  { title: '最佳成绩', path: '/activities/1/best-efforts' }
+  { title: '圈', path: '/activitie/1/laps' },
+  { title: '最佳成绩', path: '/activitie/1/best-efforts' }
 ]
 
-const Activities: React.FC = () => {
+const Activitie: React.FC = () => {
   const menusEl = MENUS.map((item, index) => {
     return (
       <Link to={item.path} key={index} className={style.menu_item}>
@@ -43,24 +43,24 @@ const Activities: React.FC = () => {
       </div>
       <div>
         <Routes>
-          <Route path="/activities/1/*" element={<ActivitiesRoutes />} />
+          <Route path="/activitie/1/*" element={<ActivitieRoutes />} />
         </Routes>
       </div>
     </PageContainer>
   )
 }
 
-const ActivitiesRoutes: React.FC = () => {
+const ActivitieRoutes: React.FC = () => {
   return (
     <Routes>
-      <Route path="activities/1" element={<Overview />} />
-      <Route path="activities/1/overview" element={<Overview />} />
+      <Route path="/activitie/1" element={<Overview />} />
+      <Route path="/activitie/1/overview" element={<Overview />} />
       {/* <Route path="/analysis" element={<Analysis />} /> */}
-      <Route path="activities/1/laps" element={<Laps />} />
-      <Route path="activities/1/best-efforts" element={<BestEfforts />} />
+      <Route path="/activitie/1/laps" element={<Laps />} />
+      <Route path="/activitie/1/best-efforts" element={<BestEfforts />} />
     </Routes>
   )
 }
 
-export default Activities
+export default Activitie
 

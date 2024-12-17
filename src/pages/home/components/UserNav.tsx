@@ -19,7 +19,7 @@ const MENUS:Array<INavItemProps> = [
     dropAlign: DROP_ALIGN_VALUE,
     children: [
       { title: '查找好友', path: '/dashboard' },
-      { title: '我的个人资料', path: '/clubs/search' },
+      { title: '我的个人资料', path: '/club/search' },
       { title: '设置', path: '/athlete/segments/starred' },
       { title: '应用程序', path: '/athlete/routes' },
       { title: '订阅者津贴', path: '/athlete/goals' },
