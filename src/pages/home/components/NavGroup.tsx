@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-09-11 14:38:50
  * @LastEditors: BGG
- * @LastEditTime: 2024-09-11 16:46:40
+ * @LastEditTime: 2024-12-18 16:59:19
  * @Description: 菜单组合
  */
 
@@ -17,11 +17,18 @@ interface INavGroupProps {
 
 const NavGroup: React.FC<INavGroupProps> = ({ data = [] }) => {
 
-  const navGroup = data.map(item => <NavItem title={item.title} path={item.path} children={item.children} dropAlign={item.dropAlign} />)
+  const navGroup = data.map(item => (
+    <NavItem
+      title={item.title}
+      path={item.path}
+      children={item.children}
+      dropAlign={item.dropAlign}
+      key={item.title} />
+  ))
 
   return (
     <div className={style.nav_group}>
-      { navGroup }
+      {navGroup}
     </div>
   )
 }

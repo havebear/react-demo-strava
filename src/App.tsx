@@ -10,7 +10,7 @@ const App : React.FC= () => {
     <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/intervals" element={<Intervals />} />
+        <Route path="/intervals/*" element={<Intervals />} />
         <Route path="/*" element={<Home />} />
         <Route path="*" element={ <NotFind />} />
       </Routes>

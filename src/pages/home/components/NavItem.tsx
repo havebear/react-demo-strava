@@ -29,7 +29,12 @@ const DropdownItem: React.FC<IDropdownItemProps> = ({ title, path }) => {
 
 const NavItem: React.FC<INavItemProps> = ({ title, children, path, dropAlign = 'left' }) => {
 
-  const menus = children?.map(item => <DropdownItem title={item.title} path={item.path} />)
+  const menus = children?.map(item => (
+    <DropdownItem
+      title={item.title}
+      path={item.path}
+      key={item.title} />
+  ))
 
   // 子节点下拉菜单
   const navDropdown = (

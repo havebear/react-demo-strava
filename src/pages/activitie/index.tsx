@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-18 15:53:10
+ * @LastEditTime: 2024-12-18 16:26:40
  * @Description: 活动
  */
 
@@ -28,9 +28,9 @@ const MENUS:Array<IMenu> = [
 ]
 
 const Activitie: React.FC = () => {
-  const menusEl = MENUS.map((item, index) => {
+  const menusEl = MENUS.map(item => {
     return (
-      <Link to={item.path} key={index} className={style.menu_item}>
+      <Link to={item.path} key={item.title} className={style.menu_item}>
         {item.title}
       </Link>
     )
@@ -43,22 +43,14 @@ const Activitie: React.FC = () => {
       </div>
       <div>
         <Routes>
-          <Route path="/activitie/1/*" element={<ActivitieRoutes />} />
+          <Route index element={<Overview />} />
+          <Route path="/activitie/1/overview" element={<Overview />} />
+          <Route path="/activitie/1/analysis" element={<Analysis />} />
+          <Route path="/activitie/1/laps" element={<Laps />} />
+          <Route path="/activitie/1/best-efforts" element={<BestEfforts />} />
         </Routes>
       </div>
     </PageContainer>
-  )
-}
-
-const ActivitieRoutes: React.FC = () => {
-  return (
-    <Routes>
-      <Route path="/activitie/1" element={<Overview />} />
-      <Route path="/activitie/1/overview" element={<Overview />} />
-      <Route path="/activitie/1/analysis" element={<Analysis />} />
-      <Route path="/activitie/1/laps" element={<Laps />} />
-      <Route path="/activitie/1/best-efforts" element={<BestEfforts />} />
-    </Routes>
   )
 }
 

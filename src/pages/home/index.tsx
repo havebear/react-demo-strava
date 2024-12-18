@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-17 17:07:59
+ * @LastEditTime: 2024-12-18 16:56:48
  * @Description: 首页
  */
 
@@ -36,9 +36,9 @@ const Home: React.FC = () => {
 const HomeRoutes: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<Dashboard />} />
+      <Route index element={<Dashboard />} />
       <Route path="dashboard" element={<Dashboard />} />
-      <Route path="activitie/:id" element={<Activitie />} />
+      <Route path="activitie/*" element={<Activitie />} />
       <Route path="map" element={<Map />} />
       <Route path="athlete" element={<Athlete />} />
       <Route path="training" element={<Training />} />

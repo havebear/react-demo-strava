@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-09-11 14:44:33
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-17 17:04:55
+ * @LastEditTime: 2024-12-18 17:03:47
  * @Description: 全局导航
  */
 
@@ -26,7 +26,7 @@ const MENUS:Array<INavItemProps> = [
     title: '训练',
     path: '/training',
     children: [
-      { title: '训练日志', path: '/athlete/calendar' },
+      { title: '训练日历', path: '/athlete/calendar' },
       { title: '我的活动', path: '/athlete/training' },
       { title: '健身追踪', path: '/athlete/training' },
       { title: '巅峰表现', path: '/athlete/training' },

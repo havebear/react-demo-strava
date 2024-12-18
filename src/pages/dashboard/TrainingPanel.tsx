@@ -30,7 +30,8 @@ const TrainingPanel: React.FC = () => {
   const tabsEl = tabs.map(item => (
     <div
       className={`${style.tab_item} ${current === item.name ? style.tab_item_active : ''}`}
-      onClick={() => setCurrent(item.name)}>
+      onClick={() => setCurrent(item.name)}
+      key={item.name}>
       {item.title}
     </div>
   ))
