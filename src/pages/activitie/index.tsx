@@ -2,16 +2,16 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-17 17:06:20
+ * @LastEditTime: 2024-12-18 15:53:10
  * @Description: 活动
  */
 
 import React from 'react'
 import PageContainer from '../../components/wrap/PageContainer'
-import Overview from './components/Overview'
-// import Analysis from './components/Analysis'
-import Laps from './components/Laps'
-import BestEfforts from './components/BestEfforts'
+import Overview from './overview'
+import Analysis from './analysis'
+import Laps from './laps'
+import BestEfforts from './best-efforts'
 import style from './css/index.module.less'
 import { Routes, Route, Link } from 'react-router-dom'
 
@@ -22,7 +22,7 @@ interface IMenu {
 
 const MENUS:Array<IMenu> = [
   { title: '概览', path: '/activitie/1/overview' },
-  // { title: '分析', path: '/analysis' },
+  { title: '分析', path: '/activitie/1/analysis' },
   { title: '圈', path: '/activitie/1/laps' },
   { title: '最佳成绩', path: '/activitie/1/best-efforts' }
 ]
@@ -55,7 +55,7 @@ const ActivitieRoutes: React.FC = () => {
     <Routes>
       <Route path="/activitie/1" element={<Overview />} />
       <Route path="/activitie/1/overview" element={<Overview />} />
-      {/* <Route path="/analysis" element={<Analysis />} /> */}
+      <Route path="/activitie/1/analysis" element={<Analysis />} />
       <Route path="/activitie/1/laps" element={<Laps />} />
       <Route path="/activitie/1/best-efforts" element={<BestEfforts />} />
     </Routes>

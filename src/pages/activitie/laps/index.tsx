@@ -17,4 +17,3 @@ const Laps: React.FC = () => {
 }
 
 export default Laps
-
