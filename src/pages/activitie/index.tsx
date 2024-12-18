@@ -43,7 +43,7 @@ const Activitie: React.FC = () => {
       </div>
       <div>
         <Routes>
-          <Route index element={<Overview />} />
+          <Route path="/1" element={<Overview />} />
           <Route path="/1/overview" element={<Overview />} />
           <Route path="/1/analysis" element={<Analysis />} />
           <Route path="/1/laps" element={<Laps />} />

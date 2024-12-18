@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-18 17:05:08
+ * @LastEditTime: 2024-12-18 17:09:58
  * @Description: intervals
  */
 
@@ -55,7 +55,7 @@ const Intervals: React.FC = () => {
       </div>
       <div>
         <Routes>
-          <Route index element={<Active />} />
+          <Route path="/" element={<Active />} />
           <Route path="active" element={<Active />} />
           <Route path="fitness" element={<Fitness />} />
           <Route path="power" element={<Power />} />
