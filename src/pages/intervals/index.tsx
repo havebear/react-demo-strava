@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-18 17:01:21
+ * @LastEditTime: 2024-12-18 17:05:08
  * @Description: intervals
  */
 
@@ -56,16 +56,17 @@ const Intervals: React.FC = () => {
       <div>
         <Routes>
           <Route index element={<Active />} />
-          <Route path="/intervals/fitness" element={<Fitness />} />
-          <Route path="/intervals/power" element={<Power />} />
-          <Route path="/intervals/pace" element={<Pace />} />
-          <Route path="/intervals/totals" element={<Totals />} />
-          <Route path="/intervals/compare" element={<Compare />} />
-          <Route path="/intervals/compare-activities" element={<CompareActivities />} />
-          <Route path="/intervals/settings" element={<Settings />} />
-          <Route path="/intervals/groups" element={<Groups />} />
-          <Route path="/intervals/chats" element={<Chats />} />
-          <Route path="/intervals/athlete" element={<Athlete />} />
+          <Route path="active" element={<Active />} />
+          <Route path="fitness" element={<Fitness />} />
+          <Route path="power" element={<Power />} />
+          <Route path="pace" element={<Pace />} />
+          <Route path="totals" element={<Totals />} />
+          <Route path="compare" element={<Compare />} />
+          <Route path="compare-activities" element={<CompareActivities />} />
+          <Route path="settings" element={<Settings />} />
+          <Route path="groups" element={<Groups />} />
+          <Route path="chats" element={<Chats />} />
+          <Route path="athlete" element={<Athlete />} />
         </Routes>
       </div>
     </div>

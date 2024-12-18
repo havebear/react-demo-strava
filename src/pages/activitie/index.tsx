@@ -44,10 +44,10 @@ const Activitie: React.FC = () => {
       <div>
         <Routes>
           <Route index element={<Overview />} />
-          <Route path="/activitie/1/overview" element={<Overview />} />
-          <Route path="/activitie/1/analysis" element={<Analysis />} />
-          <Route path="/activitie/1/laps" element={<Laps />} />
-          <Route path="/activitie/1/best-efforts" element={<BestEfforts />} />
+          <Route path="/1/overview" element={<Overview />} />
+          <Route path="/1/analysis" element={<Analysis />} />
+          <Route path="/1/laps" element={<Laps />} />
+          <Route path="/1/best-efforts" element={<BestEfforts />} />
         </Routes>
       </div>
     </PageContainer>
