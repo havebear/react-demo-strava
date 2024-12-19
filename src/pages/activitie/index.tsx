@@ -2,20 +2,21 @@
  * @Author: BGG
  * @Date: 2024-02-28 16:31:14
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-19 16:10:36
+ * @LastEditTime: 2024-12-19 17:48:51
  * @Description: 活动
  */
 
 import React from 'react'
 import PageContainer from '../../components/wrap/PageContainer'
 import LeftMenus from '../../components/menu/LeftMenus'
+import ActivitieInfo from './components/ActivitieInfo'
 import Overview from './overview'
 import Analysis from './analysis'
 import Laps from './laps'
 import BestEfforts from './best-efforts'
 import style from './css/index.module.less'
 import { IMenu } from '../../components/menu/types'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 const MENUS:Array<IMenu> = [
   { title: '概览', path: '/activitie/1/overview' },
@@ -25,21 +26,11 @@ const MENUS:Array<IMenu> = [
 ]
 
 const Activitie: React.FC = () => {
-  const menusEl = MENUS.map(item => {
-    return (
-      <Link to={item.path} key={item.title} className={style.menu_item}>
-        {item.title}
-      </Link>
-    )
-  })
-
   return (
-    <PageContainer>
+    <PageContainer flex paddingTop="30px">
       <LeftMenus list={MENUS} />
-      <div className={style.global_header}>
-        {menusEl}
-      </div>
-      <div>
+      <div className={style.main}>
+        <ActivitieInfo />
         <Routes>
           <Route path="/1" element={<Overview />} />
           <Route path="/1/overview" element={<Overview />} />

@@ -11,11 +11,13 @@ import style from './css/PageContainer.module.less'
 
 interface IPageContainer {
   children?: React.ReactNode;
+  flex?: boolean;
+  paddingTop: string;
 }
 
-const PageContainer: React.FC<IPageContainer> = ({ children }) => {
+const PageContainer: React.FC<IPageContainer> = ({ children, flex = false, paddingTop = '0' }) => {
   return (
-    <div className={style.container}>
+    <div className={`${style.container} ${flex ? style.flex : ''}`} style={{ paddingTop }}>
       {children}
     </div>
   )
