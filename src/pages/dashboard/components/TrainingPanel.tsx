@@ -7,10 +7,10 @@
  */
 
 import React, { useState } from 'react'
-import Card from '../../components/card/Card'
-import TrainingStatistics from './components/TrainingStatistics'
-import LinkCard from '../../components/card/LinkCard'
-import style from './css/TrainingPanel.module.less'
+import Card from '../../../components/card/Card'
+import TrainingStatistics from './TrainingStatistics'
+import LinkCard from '../../../components/card/LinkCard'
+import style from '../css/TrainingPanel.module.less'
 
 interface ITab {
   title: string,

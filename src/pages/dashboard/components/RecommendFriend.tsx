@@ -7,9 +7,9 @@
  */
 
 import React from 'react'
-import TitleBar from '../../components/title/TitleBar'
-import RecommendFriendItem from './components/RecommendFriendItem'
-import style from './css/RecommendFriend.module.less'
+import TitleBar from '../../../components/title/TitleBar'
+import RecommendFriendItem from './RecommendFriendItem'
+import style from '../css/RecommendFriend.module.less'
 
 const RecommendFriend: React.FC = () => {
 

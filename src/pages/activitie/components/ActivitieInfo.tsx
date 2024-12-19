@@ -7,10 +7,11 @@
  */
 
 import React from 'react'
+import style from '../css/index.module.less'
 
 const ActivitieInfo: React.FC = () => {
   return (
-    <div>
+    <div className={style.activitie_info}>
       ActivitieInfo
     </div>
   )

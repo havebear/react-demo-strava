@@ -7,12 +7,12 @@
  */
 
 import React from 'react'
-import Card from '../../components/card/Card'
-import Avatar from '../../components/avatar/Avatar'
-import DataIndexGroup from '../../components/data/DataIndexGroup'
+import Card from '../../../components/card/Card'
+import Avatar from '../../../components/avatar/Avatar'
+import DataIndexGroup from '../../../components/data/DataIndexGroup'
 import style from './css/UserPanel.module.less'
-import LinkCard from '../../components/card/LinkCard'
-import { IColumn } from '../../components/data/types'
+import LinkCard from '../../../components/card/LinkCard'
+import { IColumn } from '../../../components/data/types'
 
 const data = {
   a: 26,

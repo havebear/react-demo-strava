@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-05-08 14:15:15
  * @LastEditors: BGG
- * @LastEditTime: 2024-05-08 14:15:15
+ * @LastEditTime: 2024-12-19 17:57:29
  * @Description: 页面容器
  */
 
@@ -12,7 +12,7 @@ import style from './css/PageContainer.module.less'
 interface IPageContainer {
   children?: React.ReactNode;
   flex?: boolean;
-  paddingTop: string;
+  paddingTop?: string;
 }
 
 const PageContainer: React.FC<IPageContainer> = ({ children, flex = false, paddingTop = '0' }) => {

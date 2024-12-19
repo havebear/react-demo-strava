@@ -7,8 +7,8 @@
  */
 
 import React from 'react'
-import ActivityItem from '../../components/activity/Activity'
-import style from './css/Activity.module.less'
+import ActivityItem from '../../../components/activity/Activity'
+import style from '../css/Activity.module.less'
 
 const Activity: React.FC = () => {
   return (

@@ -12,12 +12,17 @@ import style from './css/Card.module.less'
 interface ICardProps {
   children?: React.ReactNode;
   bottomMargin?: boolean;
-  padding?: null | 's' |'m' | 'l'
+  padding?: null | 's' |'m' | 'l',
+  bordered?: boolean
 }
 
-const Card: React.FC<ICardProps> = ({ children, bottomMargin, padding }) => {
+const Card: React.FC<ICardProps> = ({ children, bottomMargin, padding, bordered }) => {
 
-  const cardClass = `${bottomMargin? style.card_bottom_margin : ''} ${padding? style[`card_padding_${padding}`] : ''}`
+  const cardClass = `
+    ${bottomMargin? style.card_bottom_margin : ''}
+    ${padding? style[`card_padding_${padding}`] : ''}
+    ${bordered? style.card_bordered : ''}
+  `
 
   return (
     <div className={`${style.card} ${cardClass}`}>

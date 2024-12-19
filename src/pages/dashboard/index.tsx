@@ -8,18 +8,18 @@
 
 import React from 'react'
 import PageContainer from '../../components/wrap/PageContainer'
-import UserPanel from './UserPanel'
-import TrainingPanel from './TrainingPanel'
-import Activity from './Activity'
-import Challenge from './Challenge'
-import Club from './Club'
-import RecommendFriend from './RecommendFriend'
-import About from './About'
+import UserPanel from './components/UserPanel'
+import TrainingPanel from './components/TrainingPanel'
+import Activity from './components/Activity'
+import Challenge from './components/Challenge'
+import Club from './components/Club'
+import RecommendFriend from './components/RecommendFriend'
+import About from './components/About'
 import style from './css/index.module.less'
 
 const Dashboard: React.FC = () => {
   return (
-    <PageContainer>
+    <PageContainer flex>
       <div className={style.left}>
         <UserPanel />
         <TrainingPanel />

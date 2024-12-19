@@ -7,9 +7,9 @@
  */
 
 import React from 'react'
-import TitleBar from '../../components/title/TitleBar'
-import ChallengeItem from './components/ChallengeItem'
-import style from './css/Challenge.module.less'
+import TitleBar from '../../../components/title/TitleBar'
+import ChallengeItem from './ChallengeItem'
+import style from '../css/Challenge.module.less'
 
 const Challenge: React.FC = () => {
 

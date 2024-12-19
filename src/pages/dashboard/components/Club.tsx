@@ -7,10 +7,10 @@
  */
 
 import React from 'react'
-import TitleBar from '../../components/title/TitleBar'
-import Avatar from '../../components/avatar/Avatar'
+import TitleBar from '../../../components/title/TitleBar'
+import Avatar from '../../../components/avatar/Avatar'
 
-import style from './css/Club.module.less'
+import style from '../css/Club.module.less'
 
 const Club: React.FC = () => {
   return (
