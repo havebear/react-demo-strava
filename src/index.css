@@ -17,10 +17,13 @@ body {
   --font-size-l: 18px;
   --font-size-title: 22px;
   --radius-s: 3px;
+  --font-color-title: #000;
   --font-color-content: #222222;
   --font-color-info: #525252;
   --font-color-hover: #FC5200;
   --bg-color-main: #FFF;
+  --bg-color-main-hover: #F7F7FA;
+  --border-color: #F0F0F0;
 }
 
 /* :root {

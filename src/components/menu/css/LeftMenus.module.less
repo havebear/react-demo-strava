@@ -1,0 +1,35 @@
+.menus {
+  width: 200px;
+  background-color: var(--bg-color-main);
+  border-radius: var(--radius-s);
+  border: 1px solid var(--border-color);
+}
+
+.item {
+  position: relative;
+  display: block;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  padding: 0 var(--padding-l);
+  border-top: 1px solid var(--border-color);
+  font-size: var(--font-size-m);
+  color: var(--font-color-content);
+  &:first-child {
+    border-top: none;
+  }
+  &:hover, &.active {
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background-color: var(--font-color-hover);
+    }
+  }
+  &:hover {
+    background-color: var(--bg-color-main-hover);
+  }
+}

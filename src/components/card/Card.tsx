@@ -9,14 +9,13 @@
 import React from 'react'
 import style from './css/Card.module.less'
 
-interface ICard {
+interface ICardProps {
   children?: React.ReactNode;
   bottomMargin?: boolean;
   padding?: null | 's' |'m' | 'l'
-
 }
 
-const Card: React.FC<ICard> = ({ children, bottomMargin, padding }) => {
+const Card: React.FC<ICardProps> = ({ children, bottomMargin, padding }) => {
 
   const cardClass = `${bottomMargin? style.card_bottom_margin : ''} ${padding? style[`card_padding_${padding}`] : ''}`
 
