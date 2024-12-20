@@ -7,23 +7,24 @@ body {
 }
 
 :root {
-  --padding-xs: 5px;
-  --padding-s: 10px;
-  --padding-m: 15px;
-  --padding-l: 20px;
-  --font-size-xs: 12px;
-  --font-size-s: 14px;
-  --font-size-m: 16px;
-  --font-size-l: 18px;
-  --font-size-title: 22px;
-  --radius-s: 3px;
-  --font-color-title: #000;
-  --font-color-content: #222222;
-  --font-color-info: #525252;
-  --font-color-hover: #FC5200;
-  --bg-color-main: #FFF;
+  --padding-xs         : 5px;
+  --padding-s          : 10px;
+  --padding-m          : 15px;
+  --padding-l          : 20px;
+  --font-size-xs       : 12px;
+  --font-size-s        : 14px;
+  --font-size-m        : 16px;
+  --font-size-l        : 18px;
+  --font-size-title    : 22px;
+  --radius-s           : 3px;
+  --font-color-title   : #000;
+  --font-color-content : #222222;
+  --font-color-info    : #525252;
+  --font-color-hover   : #FC5200;
+  --bg-color-main      : #FFF;
   --bg-color-main-hover: #F7F7FA;
-  --border-color: #F0F0F0;
+  --border-color       : #DFDFE8;
+  --border-color-light : #F0F0F0;
 }
 
 /* :root {

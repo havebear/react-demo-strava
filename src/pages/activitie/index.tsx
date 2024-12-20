@@ -9,7 +9,7 @@
 import React from 'react'
 import PageContainer from '../../components/wrap/PageContainer'
 import LeftMenus from '../../components/menu/LeftMenus'
-import ActivitieInfo from './components/ActivitieInfo'
+import ActivitieInfo from './activitie-info'
 import Overview from './overview'
 import Analysis from './analysis'
 import Laps from './laps'
@@ -19,7 +19,7 @@ import { IMenu } from '../../components/menu/types'
 import { Routes, Route } from 'react-router-dom'
 
 const MENUS:Array<IMenu> = [
-  { title: '概览', path: '/activitie/1/overview' },
+  { title: '概览', path: '/activitie/1/overview', paths: ['/activitie/1', '/activitie/1/'] },
   { title: '分析', path: '/activitie/1/analysis' },
   { title: '圈', path: '/activitie/1/laps' },
   { title: '最佳成绩', path: '/activitie/1/best-efforts' }

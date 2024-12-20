@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-03-19 15:59:12
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-16 16:25:04
+ * @LastEditTime: 2024-12-20 14:19:31
  * @Description: 用户面板
  */
 
@@ -10,7 +10,7 @@ import React from 'react'
 import Card from '../../../components/card/Card'
 import Avatar from '../../../components/avatar/Avatar'
 import DataIndexGroup from '../../../components/data/DataIndexGroup'
-import style from './css/UserPanel.module.less'
+import style from '../css/UserPanel.module.less'
 import LinkCard from '../../../components/card/LinkCard'
 import { IColumn } from '../../../components/data/types'
 
