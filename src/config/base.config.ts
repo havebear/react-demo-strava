@@ -9,3 +9,7 @@
 export const METER = 'm'
 export const KILOMETRE = 'km'
 export const INDIVIDUAL = '个'
+export const PERCENTAGE = '%'
+export const TSS = 'tss'
+export const KJ = 'KJ'
+export const POWER = 'W'
