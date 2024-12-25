@@ -35,7 +35,7 @@ const DataIndex: React.FC<IDataIndexProps> = ({
   const rValue = valueContent || (
     <div className={style.value}>
       <span style={{ fontSize: valueFontSize }}>{value}</span>
-      <span style={{ fontSize: unitFontSize }}>{unit || ''}</span>
+      {unit ? <span className={style.unit} style={{ fontSize: unitFontSize }}>{unit}</span> : null}
     </div>
   )
   const wrapStyle = { textAlign: align, flex: span }
