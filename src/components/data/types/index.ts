@@ -2,6 +2,9 @@ export interface ICommonProps {
   reversal?: boolean, // 调换标题和数值的位置
   align?: 'left' | 'right' | 'center' // 文本对齐方式
   border?: boolean // 是否显示边框
+  titleFontSize?: string,
+  valueFontSize?: string,
+  unitFontSize?: string
 }
 
 export interface IColumn {

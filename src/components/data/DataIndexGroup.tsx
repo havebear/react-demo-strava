@@ -23,7 +23,10 @@ const DataIndexGroup: React.FC<IDataIndexGroupProps> = ({
   reversal = false,
   align = 'left',
   border = false,
-  flex = false
+  flex = false,
+  titleFontSize,
+  valueFontSize,
+  unitFontSize
 }) => {
   return (
     <div className={`${style.container} ${flex ? style.flex : null}`}>
@@ -35,6 +38,9 @@ const DataIndexGroup: React.FC<IDataIndexGroupProps> = ({
         reversal={reversal}
         align={align}
         span={item.span || 1}
+        titleFontSize={titleFontSize}
+        valueFontSize={valueFontSize}
+        unitFontSize={unitFontSize}
         border={border && index !== columns.length - 1} />)}
     </div>
   )
