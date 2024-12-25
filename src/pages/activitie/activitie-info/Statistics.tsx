@@ -2,7 +2,7 @@
  * @Author: BGG
  * @Date: 2024-04-29 14:15:30
  * @LastEditors: BGG
- * @LastEditTime: 2024-12-24 15:58:32
+ * @LastEditTime: 2024-12-25 14:29:10
  * @Description: 活动统计
  */
 
@@ -40,8 +40,8 @@ const columns2: IColumn[] = [
 const Statistics: React.FC = () => {
   return (
     <div className={style.activitie_info}>
-      <DataIndexGroup columns={columns} data={data} reversal />
-      <DataIndexGroup columns={columns2} data={data} reversal />
+      <DataIndexGroup columns={columns} data={data} reversal valueFontSize='28px' />
+      <DataIndexGroup columns={columns2} data={data} reversal unitFontSize='14px' />
     </div>
   )
 }
