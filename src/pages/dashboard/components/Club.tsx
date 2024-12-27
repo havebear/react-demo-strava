@@ -16,10 +16,8 @@ const Club: React.FC = () => {
   return (
     <div className={style.container}>
       <TitleBar title="你的俱乐部" />
-      <Avatar />
-      <Avatar />
-      <Avatar />
-      <Avatar />
+      <Avatar src='https://dgalywyr863hv.cloudfront.net/pictures/clubs/589938/13748602/2/medium.jpg' />
+      <Avatar src='https://dgalywyr863hv.cloudfront.net/pictures/clubs/231407/5319085/1/medium.jpg' />
     </div>
   )
 };
