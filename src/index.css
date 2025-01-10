@@ -25,6 +25,7 @@ body {
   --bg-color-main-hover: #F7F7FA;
   --border-color       : #DFDFE8;
   --border-color-light : #F0F0F0;
+  --color-main         : #FC5200;
 }
 
 /* :root {
